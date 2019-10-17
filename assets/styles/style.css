@@ -1141,8 +1141,8 @@ iframe {
 
 .logotype {
   display: inline-block;
-  height: 18px;
-  max-height: 48px;
+ /* height: 18px;*/
+  max-height: 90px;
   transition: transform 0.4s cubic-bezier(0.72, 0.16, 0.345, 0.875);
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {

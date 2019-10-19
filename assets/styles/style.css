@@ -1153,7 +1153,7 @@ iframe {
 }
 @media only screen and (max-width: 580px) {
   .logotype {
-    max-height: 18px;
+    max-height: 40px;
   }
 }
 

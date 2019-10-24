@@ -4212,7 +4212,7 @@ li:nth-child(4) .menu-list__item span {
 }
 .footer::before {
   content: '';
-  background-color: #110f10;
+  background-color: #1b254f;
   position: absolute;
   height: 100%;
   width: 50%;
@@ -4396,12 +4396,12 @@ li:nth-child(4) .menu-list__item span {
   visibility: hidden;
 }
 .reveal.animated::before {
-  background: #110f10;
-  animation: reveal 2s cubic-bezier(0.77, 0, 0.175, 1) both;
+  background: #d4af37;
+  animation: reveal 3s cubic-bezier(0.77, 0, 0.175, 1) both;
   z-index: 2;
 }
 .reveal.animated::after {
-  animation: revealBack 2s cubic-bezier(0.77, 0, 0.175, 1) both;
+  animation: revealBack 3s cubic-bezier(0.77, 0, 0.175, 1) both;
 }
 
 @keyframes reveal {
@@ -4605,6 +4605,9 @@ li:nth-child(4) .menu-list__item span {
 
 .medium-zoom-image {
   z-index: 9999;
+}
+.gold{
+  color: #d4af37;
 }
 
 /*# sourceMappingURL=style.css.map */

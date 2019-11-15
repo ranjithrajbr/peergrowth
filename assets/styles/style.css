@@ -1595,8 +1595,9 @@ iframe {
 .slider-horizontal .slider__caption {
   flex: 0 1 50%;
   height: 100vh;
-  padding-right: 3rem;
+  /* padding-right: 3rem; */
   width: 50%;
+  padding-left: 3rem;
 }
 @media only screen and (max-width: 992px) {
   .slider-horizontal .slider__caption {

@@ -1175,7 +1175,7 @@ iframe {
 .hamburger__inner:before, .hamburger__inner:after {
   background-color: #110f10;
   display: block;
-  content: url('/assets/icons/ham.svg');
+  content:'';
   margin-left: -12px;
   height: 4px;
   width: 25px;

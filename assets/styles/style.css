@@ -895,7 +895,7 @@ iframe {
 
 ::selection {
   background: transparent;
-  color: #f7541b;
+  color: #3e83be;
 }
 
 /* -----------------------------------------------------------------
@@ -4506,7 +4506,7 @@ li:nth-child(4) .menu-list__item span {
 }
 
 .cursor {
-  background-color: #f7541b;
+  background-color: #3e83be;
   border-radius: 50%;
   display: block;
   position: fixed;
@@ -4625,4 +4625,4 @@ li:nth-child(4) .menu-list__item span {
   color: #d4af37;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map #f7541b */

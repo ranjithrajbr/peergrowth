@@ -4,22 +4,19 @@
 <head>
     <meta charset="utf-8" />
     <title>Peer</title>
-
-	<!-- Meta Data -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="format-detection" content="telephone=no"/>
-    <meta name="format-detection" content="address=no"/>
+    <!-- Meta Data -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
     <meta name="author" content="ArtStyles" />
     <meta name="description" content="A trendy, minimalistic and ultra modern HTML5 template for digital agency." />
-
     <!-- Twitter data -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@ArtTemplates">
     <meta name="twitter:title" content="Fotico">
     <meta name="twitter:description" content="A trendy, minimalistic and ultra modern HTML5 template for digital agency.">
     <meta name="twitter:image" content="assets/images/social.jpg">
-
     <!-- Open Graph data -->
     <meta property="og:title" content="ArtTemplate" />
     <meta property="og:type" content="website" />
@@ -27,129 +24,232 @@
     <meta property="og:image" content="assets/images/social.jpg" />
     <meta property="og:description" content="A trendy, minimalistic and ultra modern HTML5 template for digital agency." />
     <meta property="og:site_name" content="Fotico" />
-
-	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-touch-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-touch-icon-57x57.png">
-	<link rel="shortcut icon" href="assets/images/favicons/favicon.png" type="image/png">
-
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-touch-icon-57x57.png">
+    <link rel="shortcut icon" href="assets/images/favicons/favicon.png" type="image/png">
     <!-- Styles -->
-	<link rel="stylesheet" type="text/css" href="assets/styles/style.css"/>
-	<link rel="stylesheet" type="text/css" href="assets/styles/style-dark.css"/>
-	<link rel="stylesheet" type="text/css" href="assets/demo/style-demo.css"/>
-	
+    <link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/style-dark.css" />
+    <link rel="stylesheet" type="text/css" href="assets/demo/style-demo.css" />
+    <style>
+    	input[type="radio"]{
+        margin: 0 10px 0 10px;
+        }
+        .hidden{
+        	display: none;
+        }
+
+    </style>
+    <script>
+    	$(document).ready(function() {
+    $("#form-2").removeClass("hidden");
+      });
+        function candidate(){
+			document.getElementById("form-1").style.display ="inline";
+			document.getElementById("form-2").style.display ="none";
+		}
+		function company(){
+			document.getElementById("form-1").style.display ="none";
+			document.getElementById("form-2").style.display ="inline";
+
+		}
+	</script>
 </head>
+
 <body>
     <!-- Preloader -->
     <div class="preloader">
-	    <div class="preloader__wrap">
-	        <img class="preloader__logo" src="assets/images/peerlogo.png" alt="ARTEM">
-		    <div class="preloader__progress"><span></span></div>
-		</div>
-	</div>
-
+        <div class="preloader__wrap">
+            <img class="preloader__logo" src="assets/images/peerlogo.png" alt="ARTEM">
+            <div class="preloader__progress"><span></span></div>
+        </div>
+    </div>
     <!-- Top -->
-	<nav class="navbar navbar--white">
+    <nav class="navbar navbar--white">
         <div class="mr-auto logo-container">
             <a class="logo-link" href="index.html">
                 <img class="logotype logotype__front" src="assets/images/peerlogo.png" alt="ARTEM.">
-				<img class="logotype logotype__back" src="assets/images/peerlogo.png" alt="ARTEM.">
-			</a>
+                <img class="logotype logotype__back" src="assets/images/peerlogo.png" alt="ARTEM.">
+            </a>
         </div>
-		<div class="ml-sm-auto">
-			<button class="hamburger zoom-cursor" type="button">
+        <div class="ml-sm-auto">
+            <button class="hamburger zoom-cursor" type="button">
                 <span class="hamburger__inner"></span>
             </button>
-	    </div>
-	</nav>
-	<!-- /Top -->
-
-	<!-- Intro -->
-	<header class="header-page header-fullscreen overlay">
-		<div class="wrap-bg">    
-			<div class="js-image jarallax" data-image="assets/images/letsinteract.jpg"></div>
-		</div>
-		
-	</header>
-     <!-- /Intro -->	
-	
+        </div>
+    </nav>
+    <!-- /Top -->
+    <!-- Intro -->
+    <header class="header-page header-fullscreen overlay">
+        <div class="wrap-bg">
+            <div class="js-image jarallax" data-image="assets/images/letsinteract.jpg"></div>
+        </div>
+    </header>
+    <!-- /Intro -->
     <!-- Contact -->
     <div id="start" class="flex-conteiner-fluid h--100">
-	    <!-- Form -->
-	    <div class="row flex-fill justify-content-center align-items-md-center">
-		    <div class="col-12 col-lg-10 col-xl-8 contect-block js-block">
-			    <h2 class="title title--h3 text-lg-center js-lines">Just a form. It’s easy.</h2> 
-			    <form id="contact-form" class="contact-form" data-toggle="validator">
+        <!-- Form -->
+        <div class="row flex-fill justify-content-center align-items-md-center">
+            <div class="col-12 col-lg-10 col-xl-8 contect-block js-block">
+                <h2 class="title title--h3 text-lg-center js-lines">Just a form. It’s easy.</h2>
+                
+                    <input type="radio" onclick="candidate();" name="test" checked>Candidate &nbsp;&nbsp;
+                    <input type="radio" onclick="company();" name="test">Company
+                
+                <form id="form-1" class="contact-form" data-toggle="validator">
                     <div class="row">
-				        <div class="col-12 col-lg-6">
-						    <div class="form-group">
+                        <div class="col-12 col-lg-6">
+                            <div class="form-group">
                                 <input type="text" class="inputText" id="name" name="name" placeholder="Full name" required="required" autocomplete="off" oninvalid="setCustomValidity('Fill in the field')" onkeyup="setCustomValidity('')">
-								<div class="help-block with-errors"></div>
-							</div>
-				        </div>
-				        <div class="col-12 col-lg-6">
-						    <div class="form-group">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="form-group">
                                 <input type="email" class="inputText" id="email" name="email" placeholder="Email address" required="required" autocomplete="off" oninvalid="setCustomValidity('Email is incorrect')" onkeyup="setCustomValidity('')">
-								<div class="help-block with-errors"></div>
-							</div>
-				        </div>
-			        </div>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">
-				        <div class="col-12 col-lg-12">
-						    <div class="form-group">
-                                <textarea class="textarea" id="message" name="message" placeholder="Comment" rows="1" required="required" oninvalid="setCustomValidity('Fill in the field')" onkeyup="setCustomValidity('')"></textarea>
-								<div class="help-block with-errors"></div>
-							</div>
-				        </div>
-			        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="form-group">
+                                <input type="text" class="inputText" id="company" name="company" placeholder="Company name" required="required" autocomplete="off" oninvalid="setCustomValidity('Fill in the field')" onkeyup="setCustomValidity('')">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="form-group">
+                                <input type="number" class="inputText" id="phone" name="phone" placeholder="Phone number" required="required" autocomplete="off" oninvalid="setCustomValidity('Fill in the field')" onkeyup="setCustomValidity('')">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-12">
+                            <div class="form-group">
+                                <textarea class="textarea" id="description" name="description" placeholder="About yourself" rows="3" required="required" oninvalid="setCustomValidity('Fill in the field')" onkeyup="setCustomValidity('')"></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-lg-6">
+                            <div class="form-group">
+                                <input type="file" id="phone" name="phone" required="required" value="Upload CV">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row align-items-center">
-					    <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-6">
                             <button type="submit" class="btn">Send Message</button>
-				        </div>
-				        <div class="col-12 col-md-6 text-md-right">
+                        </div>
+                        <div class="col-12 col-md-6 text-md-right">
                             <div id="validator-contact" class="_hidden">&nbsp;</div>
-				        </div>						
-			        </div>
-				</form>				
-			</div>
-		</div>
-		<!-- /Form -->
-		
-		<!-- Footer -->
-	    <div class="row text-lg-center">
+                        </div>
+                    </div>
+                </form>
+                <form id="form-2" class="contact-form hidden" data-toggle="validator">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="form-group">
+                                <input type="text" class="inputText" id="name" name="company_name" placeholder="Company Name" required="required" autocomplete="off" oninvalid="setCustomValidity('Fill in the field')" onkeyup="setCustomValidity('')">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="form-group">
+                                <input type="email" class="inputText" id="email" name="email" placeholder="Email address" required="required" autocomplete="off" oninvalid="setCustomValidity('Email is incorrect')" onkeyup="setCustomValidity('')">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="form-group">
+                                <input type="text" class="inputText" id="industry" name="industry" placeholder="Industry" required="required" autocomplete="off" oninvalid="setCustomValidity('Fill in the field')" onkeyup="setCustomValidity('')">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="form-group">
+                                <input type="number" class="inputText" id="phone" name="phone" placeholder="Phone number" required="required" autocomplete="off" oninvalid="setCustomValidity('Fill in the field')" onkeyup="setCustomValidity('')">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="form-group">
+                                <input type="text" class="inputText" id="point" name="point" placeholder="Point of Contact" required="required" autocomplete="off" oninvalid="setCustomValidity('Fill in the field')" onkeyup="setCustomValidity('')">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-lg-12">
+                            <div class="form-group">
+                               <p>We are Interested in<br></p>
+                               <input type="radio" name="test" value="executive">Executive Search
+                               <input type="radio" name="test" value="consult">Consulting Solutions
+                               <input type="radio"  name="test" value="talent">Talent Advisory
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6">
+                            <button type="submit" class="btn">Send Message</button>
+                        </div>
+                        <div class="col-12 col-md-6 text-md-right">
+                            <div id="validator-contact" class="_hidden">&nbsp;</div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- /Form -->
+        <!-- Footer -->
+      <!--   <div class="row text-lg-center">
             <ul class="col-12 col-md-12 col-lg-4 col-xl-4 listContact list-unstyled js-lines">
-				<li><h6 class="title title--h6">OFFICE</h6></li>
-				<li>Peergrowth, Po Box No.-393343</li>
-				<li> Dubai, United Arab Emirates</li>
-			</ul>
-			<ul class="col-12 col-md-6 col-lg-4 col-xl-4 listContact list-unstyled js-lines">
-				<li><h6 class="title title--h6">START A CONVERSATION</h6></li>
-				<li>info@peergrowth.net</li>
+                <li>
+                    <h6 class="title title--h6">OFFICE</h6>
+                </li>
+                <li>Peergrowth, Po Box No.-393343</li>
+                <li> Dubai, United Arab Emirates</li>
+            </ul>
+            <ul class="col-12 col-md-6 col-lg-4 col-xl-4 listContact list-unstyled js-lines">
+                <li>
+                    <h6 class="title title--h6">START A CONVERSATION</h6>
+                </li>
+                <li>info@peergrowth.net</li>
                 <li>+971 (0) 4 2400 448</li>
-			</ul>
-			<ul class="col-12 col-md-6 col-lg-4 col-xl-4 listContact list-unstyled js-lines">
-				<li><h6 class="title title--h6">FOLLOW US</h6></li>
-				<li>Connect with me on <a class="link_decoration" href="">facebook</a></li>
-				<li><a class="link_decoration" href="">twitter</a> or <a class="link_decoration" href="">instagrem</a></li>
-			</ul>
-		</div>
-		<!-- /Footer -->
-	</div>
+            </ul>
+            <ul class="col-12 col-md-6 col-lg-4 col-xl-4 listContact list-unstyled js-lines">
+                <li>
+                    <h6 class="title title--h6">FOLLOW US</h6>
+                </li>
+                <li>Connect with me on <a class="link_decoration" href="">facebook</a></li>
+                <li><a class="link_decoration" href="">twitter</a> or <a class="link_decoration" href="">instagrem</a></li>
+            </ul>
+        </div> -->
+        <!-- /Footer -->
+    </div>
     <!-- /Contact -->
-
-	<!-- Menu -->
-	<!-- Menu -->
-	<div class="menu">
+    <!-- Menu -->
+    <!-- Menu -->
+    <div class="menu">
         <div class="menu-inner">
             <ul style="text-align:center;" class="menu-list">
                 <li><a class="menu-list__item" href="about_video.html"><span style="color:#1b254f">WHO</span> we are?</span></a></li>
                 <li><a class="menu-list__item" href="whatwedo.html"><span style="color:#1b254f">WHAT</span> we do?</span></a></li>
                 <li><a class="menu-list__item" href="howwework.html"><span style="color:#1b254f">HOW</span> we work?</span></a></li>
                 <li><a class="menu-list__item" href="speak.html"><span style="color:#1b254f">WHY</span> choose us?</span></a></li>
-                <li><a class="menu-list__item" href="contact.html"><span  style="color:#1b254f">LETS</span> interact</span></a></li>
-                
+                <li><a class="menu-list__item" href="contact.html"><span style="color:#1b254f">LETS</span> interact</span></a></li>
             </ul>
         </div>
         <div class="social">
@@ -160,43 +260,43 @@
     </div>
     <div class="ef-background"></div>
     <!-- /Menu -->
-
-	<!-- Demo Menu -->
-	
+    <!-- Demo Menu -->
     <div class="btnSlideNav slideClose"></div>
     <ul class="slideNav">
-	    <li class="slideNav__item rtl-mode"><h4 class="title title--5">More pages</h4> <a href="rtl-dark/index.html">RTL</a></li>
+        <li class="slideNav__item rtl-mode">
+            <h4 class="title title--5">More pages</h4> <a href="rtl-dark/index.html">RTL</a>
+        </li>
         <li class="slideNav__item"><a href="index.html">1. Homepage 1</a></li>
         <li class="slideNav__item"><a href="index_v2.html">2. Homepage 2</a></li>
-        <li class="slideNav__item"><a href="index_v3.html">3. Homepage 3</a></li>		
+        <li class="slideNav__item"><a href="index_v3.html">3. Homepage 3</a></li>
         <li class="slideNav__item"><a href="about_video.html">4. About (video header)</a></li>
-		<li class="slideNav__item"><a href="about_image.html">5. About (image header)</a></li>
+        <li class="slideNav__item"><a href="about_image.html">5. About (image header)</a></li>
         <li class="slideNav__item"><a href="contact.html">6. Contact</a></li>
-		<li class="slideNav__item"><a href="contact-form.html">7. Contact (Map)</a></li>
+        <li class="slideNav__item"><a href="contact-form.html">7. Contact (Map)</a></li>
         <li class="slideNav__item"><a href="news.html">8. News</a></li>
-		<li class="slideNav__item"><a href="news_liquid.html">9. News Full Width</a></li>
-		<li class="slideNav__item"><a href="news_single.html">10. Post Image</a></li>
-		<li class="slideNav__item"><a href="news_single_video.html">11. Post Video</a></li>
-		<li class="slideNav__item"><a href="projects.html">12. Projects</a></li>
-		<li class="slideNav__item"><a href="projects_lightbox.html">13. Projects Lightbox</a> <!--<span class="lable-new">New</span>--></li>
-		<li class="slideNav__item"><a href="projects_carousel.html">14. Projects Carousel</a></li>
-		<li class="slideNav__item"><a href="projects_single.html">15. Projects Single</a></li>
-		<li class="slideNav__item"><a href="projects_single_v2.html">16. Projects Single v2</a></li>
-		<li class="slideNav__item"><a href="projects_single_v2_youtube.html">17. Projects Single v2 (YouTube)</a></li>
-		<li class="slideNav__item"><a href="side_menu.html">18. Side Menu</a></li>
-		<li class="slideNav__item"><a href="services.html">19. Services</a></li>
-		<li class="slideNav__item"><a href="404.html">20. Error 404</a></li>
+        <li class="slideNav__item"><a href="news_liquid.html">9. News Full Width</a></li>
+        <li class="slideNav__item"><a href="news_single.html">10. Post Image</a></li>
+        <li class="slideNav__item"><a href="news_single_video.html">11. Post Video</a></li>
+        <li class="slideNav__item"><a href="projects.html">12. Projects</a></li>
+        <li class="slideNav__item"><a href="projects_lightbox.html">13. Projects Lightbox</a>
+            <!--<span class="lable-new">New</span>-->
+        </li>
+        <li class="slideNav__item"><a href="projects_carousel.html">14. Projects Carousel</a></li>
+        <li class="slideNav__item"><a href="projects_single.html">15. Projects Single</a></li>
+        <li class="slideNav__item"><a href="projects_single_v2.html">16. Projects Single v2</a></li>
+        <li class="slideNav__item"><a href="projects_single_v2_youtube.html">17. Projects Single v2 (YouTube)</a></li>
+        <li class="slideNav__item"><a href="side_menu.html">18. Side Menu</a></li>
+        <li class="slideNav__item"><a href="services.html">19. Services</a></li>
+        <li class="slideNav__item"><a href="404.html">20. Error 404</a></li>
     </ul>
-	<div class="overlay-slideNav"></div>
+    <div class="overlay-slideNav"></div>
     <!-- Demo Menu -->
-	
     <div class="cursor"></div>
-
-	<!-- JavaScripts -->
-	<script src="assets/js/jquery-3.3.1.min.js"></script>
-	<script src="assets/js/plugins.js"></script>
+    <!-- JavaScripts -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
     <script src="assets/js/common.js"></script>
-
-	<script src="assets/demo/plugins-demo.js"></script>
+    <script src="assets/demo/plugins-demo.js"></script>
 </body>
+
 </html>

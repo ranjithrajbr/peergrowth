@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Peergrowth</title>
+    <title>Peer</title>
     <!-- Meta Data -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,12 +16,12 @@
     <meta name="twitter:site" content="@ArtTemplates">
     <meta name="twitter:title" content="ARTEM.">
     <meta name="twitter:description" content="A trendy, minimalistic and ultra modern HTML5 template for digital agency.">
-    <meta name="twitter:image" content="assets/images/social.jpg">
+    <meta name="twitter:image" content="/assets/images/social.jpg">
     <!-- Open Graph data -->
     <meta property="og:title" content="ArtTemplate" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="your url website" />
-    <meta property="og:image" content="assets/images/social.jpg" />
+    <meta property="og:image" content="/assets/images/social.jpg" />
     <meta property="og:description" content="A trendy, minimalistic and ultra modern HTML5 template for digital agency." />
     <meta property="og:site_name" content="ARTEM." />
     <!-- Favicons -->
@@ -35,357 +35,217 @@
     <link rel="stylesheet" type="text/css" href="assets/styles/style-dark.css" />
     <link rel="stylesheet" type="text/css" href="assets/demo/style-demo.css" />
     <style>
-        .flip-card {
-  background-color: transparent;
-  width: ;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  margin: 20px;
+        .button{
+            background-color:#e7e7e7;
+            border-radius: 12px;
+            color:black;
+            padding: 8px 24px;
+            text-align: center;
+            display: inline-block;
+            font-size: 15px;
+            border: 2px solid #000;
+            cursor: pointer;
+            overflow: visible;
+            
+        }
+        .bar1, .bar2, .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: #333;
+      margin: 6px 0;
+      transition: 0.4s;
+      left: 0;
+
 }
 
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
+.change .bar2 {opacity: 0;}
 
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color:#fff;
-  color: black;
+@media only screen and (max-width: 580px){
+    .ham{
+        position: absolute;
+        right: 1310px;
+    }
 }
-
-/* Style the back side */
-.flip-card-back {
-  background-color:#000;
-  color: white;
-  transform: rotateY(180deg);
+.ham{
+    position: absolute;
+        right: 1235px;
 }
-
+                                        
     </style>
+    <script>
+        function myFunction(x) {
+  x.classList.toggle("change");
+}
+    </script>
 </head>
 
 <body>
     <!-- Preloader -->
     <div class="preloader">
         <div class="preloader__wrap">
-            <img class="preloader__logo" src="assets/images/peerlogowh.png" alt="ARTEM">
+            <img class="preloader__logo" src="assets/images/peerlogo.png" alt="ARTEM">
             <div class="preloader__progress"><span></span></div>
         </div>
     </div>
     <!-- Top -->
-    <nav class="navbar navbar--white">
+    <nav class="navbar">
         <div class="mr-auto logo-container">
-            <a class="logo-link" href="index.html">
-                <img class="logotype logotype__front" src="assets/images/peerlogowh.png" alt="ARTEM.">
-                <img class="logotype logotype__back" src="assets/images/peerlogowh.png" alt="ARTEM.">
-            </a>
+             <button class="hamburger zoom-cursor" type="button">
+                <div  onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </button>
         </div>
         <div class="ml-sm-auto">
-            <button class="hamburger zoom-cursor" type="button">
-                <span class="hamburger__inner"></span>
-            </button>
+            <a class="logo-link" href="index.html">
+                <img  class="logotype logotype__front" src="assets/images/peerlogo.png" alt="ARTEM.">
+                <img  class="logotype logotype__back" src="assets/images/peerlogo.png" alt="ARTEM.">
+            </a>
+            <!-- <button class="hamburger zoom-cursor" type="button">
+                <div  onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </button> -->
         </div>
     </nav>
     <!-- /Top -->
-    <!-- Intro -->
-    <header class="header-page header-fullscreen header-page--gutterBottom overlay overlay--45 js-image jarallax" data-image="assets/images/ourstory.jpg">
-        <div class="header-page__container-fluid align-items-end js-opacity">
-            <div class="row no-gutters">
-                <div class="col-md-12 col-lg-6">
-                    <div class="tail header-page__description">"Every good conversation starts with listening"<br>-Tom Haak.</div>
+    <!-- Hero -->
+    <header class="hero">
+        <div class="slider slider-horizontal">
+            <div class="control-slider control-slider--vertical swiper-control">
+                <div></div>
+                <div class="swiper-pagination"></div>
+                <div>
+                    <div class="swiper-button-next zoom-cursor">
+                        <svg class="slider-nav slider-nav--progress" viewBox="0 0 46 46">
+                            <circle class="slider-nav__path-progress slider-nav__path-progress--gray" cx="23" cy="23" r="22.5" />
+                        </svg>
+                        <svg class="slider-nav slider-nav--gray" viewBox="0 0 46 46">
+                            <circle class="slider-nav__path--gray" cx="23" cy="23" r="22.5" />
+                            <path class="slider-nav__arrow" d="M26.45 22.45l-4.91-4.91a.7707464.7707464 0 0 0-1.09 1.09L24.82 23l-4.36 4.36a.7707464.7707464 0 0 0 1.09 1.09l4.91-4.91a.77.77 0 0 0-.01-1.09z" />
+                        </svg>
+                    </div>
+                    <div class="swiper-button-prev zoom-cursor">
+                        <svg class="slider-nav slider-nav--gray" viewBox="0 0 46 46">
+                            <circle class="slider-nav__path--gray" cx="23" cy="23" r="22.5" />
+                            <path class="slider-nav__arrow" d="M18.5 23.55l4.91 4.91a.7707464.7707464 0 1 0 1.09-1.09L20.14 23l4.36-4.36a.7707464.7707464 0 0 0-1.09-1.09l-4.91 4.9a.77.77 0 0 0 0 1.1z" />
+                        </svg>
+                    </div>
                 </div>
-                <div class="col-md-12 col-lg-6 text-lg-right">
-                    <a class="btn-link btn-link--circle-right" href="!#start">THE STORY<i class="circle circle--white circle--right icon-down-open"></i></a>
+            </div>
+            <div class="slider__image swiper-container reveal">
+                <div class="swiper-wrapper">
+                    <!-- Image 1 -->
+                    <div class="swiper-slide">
+                        <div class="cover-slider" data-bg="assets/images/global.jpeg"><a class="swiper-slide__link" href="#"></a></div>
+                    </div>
+                    <!-- /Image 1 -->
+                    <!-- Image 2 -->
+                    <div class="swiper-slide">
+                        <div class="cover-slider" data-bg="assets/images/value.jpeg"><a class="swiper-slide__link" href="#"></a></div>
+                    </div>
+                    <!-- /Image 2 -->
+                    <!-- Image 3 -->
+                    <div class="swiper-slide">
+                        <div class="cover-slider" data-bg="assets/images/Reserach.jpeg"><a class="swiper-slide__link" href="#"></a></div>
+                    </div>
+                    <!-- /Image 4 -->
+                    <div class="swiper-slide">
+                        <div class="cover-slider" data-bg="assets/images/post.jpeg"><a class="swiper-slide__link" href="#"></a></div>
+                    </div>
+                    <!-- /Image 4 -->
+                    <!-- /Image 5 -->
+                    <div class="swiper-slide">
+                        <div class="cover-slider" data-bg="assets/images/custom.jpeg"><a class="swiper-slide__link" href="#"></a></div>
+                    </div>
+                    <!-- /Image 5 -->
+                </div>
+            </div>
+            <div class="slider__caption swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Caption 1 -->
+                    <div class="swiper-slide">
+                        <div class="slider__item reveal">
+                            <h6 class="title title--overhead"><span class="down-up"><span>Trusted management consulting firm, within search and advisory.&nbsp;<img style="width:50px;height:50px;" src="assets/images/Globalreach.png"></span></span></h6>
+                            <h1 class="title title--display-1 js-text-wave">Global Reach
+                            </h1>
+                            <a class="btn-link" href="contact.html"><span class="down-up"><span><button class="button">Lets Interact</button></span></span></a>
+                        </div>
+                    </div>
+                    <!-- /Caption 1 -->
+                    <!-- Caption 2 -->
+                    <div class="swiper-slide ">
+                        <div class="slider__item reveal">
+                            <h6 class="title title--overhead"><span class="down-up"><span>Trusted management consulting firm, within search and advisory.&nbsp; <img style="width:50px;height:50px;" src="assets/images/Valuedriven.png"></span></span></h6>
+                            <h1 class="title title--display-1 js-text-wave">Values driven</h1>
+                            <a class="btn-link" href="contact.html"><span class="down-up"><span><button class="button">Lets Interact</button></span></span></a>
+                        </div>
+                    </div>
+                    <!-- /Caption 2 -->
+                    <!-- Caption3  -->
+                    <div class="swiper-slide">
+                        <div class="slider__item reveal">
+                            <h6 class="title title--overhead"><span class="down-up"><span>Trusted management consulting firm, within search and advisory.&nbsp;<img style="width:50px;height:50px;" src="assets/images/Research oriented.png"></span></span></h6>
+                            <h1 class="title title--display-1 js-text-wave">Research Oriented</h1>
+                            <a class="btn-link" href="contact.html"><span class="down-up"><span><button class="button">Lets Interact</button></span></span></a>
+                        </div>
+                    </div>
+                    <!-- /Caption 3 -->
+                    <!--Caption 4 -->
+                    <div class="swiper-slide">
+                        <div class="slider__item reveal">
+                            <h6 class="title title--overhead"><span class="down-up"><span>Trusted management consulting firm, within search and advisory.&nbsp;<img style="width:50px;height:50px;" src="assets/images/Research oriented.png"></span></span></h6>
+                            <h1 style="font-size:50px;" class="title title--display-1 js-text-wave">Post Closure Engagement</h1>
+                            <a class="btn-link" href="contact.html"><span class="down-up"><span><button class="button">Lets Interact</button></span></span></a>
+                        </div>
+                    </div>
+                    <!--Caption 4 -->
+                    <!--Caption 5 -->
+                    <div class="swiper-slide">
+                        <div class="slider__item reveal">
+                            <h6 class="title title--overhead"><span class="down-up"><span>Trusted management consulting firm, within search and advisory.&nbsp;<img style="width:50px;height:50px;" src="assets/images/Research oriented.png"></span></span></h6>
+                            <h1 class="title title--display-1 js-text-wave">Customized Approach</h1>
+                            <a class="btn-link" href="contact.html"><span class="down-up"><span><button class="button">Lets Interact</button></span></span></a>
+                        </div>
+                    </div>
+                    <!--/Caption 5 -->
                 </div>
             </div>
         </div>
     </header>
-    <!-- /Intro -->
-    <!--   <header class="header-page header-fullscreen reveal">
-        <div class="wrap-bg">
-            <div class="js-image jarallax" data-image="assets/images/ourstory.jpg"></div>
-        </div>
-        <div class="header-page__container-fluid align-items-end js-opacity">
-            <div class="row no-gutters">
-                <div class="col-md-12 col-lg-6">
-                    <div class="tail header-page__description">"Every good conversation starts with listening"<br>-Tom Haak.</div>
-                </div>
-                <div class="col-md-12 col-lg-6 text-lg-right">
-                    <a class="btn-link btn-link--circle-right" href="!#start">THE STORY<i class="circle circle--white circle--right icon-down-open"></i></a>
-                </div>
-            </div>
-        </div>
-    </header> -->
-    <!-- /Intro -->
-    <!-- The Story -->
-    <article id="start" class="caption-single container">
-        <div class="row">
-            <div class="col-12 col-lg-3 reveal">
-                <h4 style="color: #000;" class="title title--overhead js-lines">The story</h4>
-            </div>
-            <div class="col-12 col-lg-9">
-                <h2 class="title title--h4 js-lines reveal"> We firmly believe that, the right leader can be the like the metaphorical glue, that could make the entire capital stick to the firm!</h2>
-                <div class="description noGutters-Bottom js-block">
-                    <p class="paragraph noGutters-Bottom">In a world of seemingly saturated competition across industries, there is novelty brimming in every corner of the world, every single day. New talent is on the hunt, and newer talent is on the rise. We, at Peer Growth, believe that the need for the right talent to match with the right culture is an underestimated yet one of the most requisite pillars for global success, for any organisation. </p>
-                </div>
-            </div>
-        </div>
-    </article>
-    <!-- /The Story -->
-    <!-- WeDo -->
-    <article class="caption-single container">
-        <div class="row">
-            <div class="col-12 col-lg-3">
-                <h4 class="title title--overhead js-lines">Our services</h4>
-            </div>
-            <div class="col-12 col-lg-9">
-                <h2 class="title title--h4 js-lines"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quisquam.</h2>
-            </div>
-        </div>
-    </article>
-    <div class="container container-no-gutters">
-        <div class="row">
-            <div class="col-lg-3">
-            </div>
-            <div class="col-lg-4" >
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="assets/images/discount.svg" alt="Avatar" style="width:100%;height:100px;padding:10px;">
-                            <h2>Executive <br>Search</h2>
-                        </div>
-                        <div class="flip-card-back">
-                            <img style="width:100%;height:200px;" src="assets/images/peerlogowh.png">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="assets/images/discount.svg" alt="Avatar"style="width:100%;height:100px;padding:10px;">
-                            <h2>Board <br>Consulting</h2>
-                        </div>
-                        <div class="flip-card-back">
-                            <img style="width:100%;height:200px;" src="assets/images/peerlogowh.png">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3">
-            </div>
-            <div class="col-lg-4" >
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="assets/images/discount.svg" alt="Avatar" style="width:100%;height:100px;padding:10px;">
-                            <h2>Peergrowth Research<br>Chronicle</h2>
-                        </div>
-                        <div class="flip-card-back">
-                            <img style="width:100%;height:200px;" src="assets/images/peerlogowh.png">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="assets/images/discount.svg" alt="Avatar" style="width:100%;height:100px;padding:10px;">
-                            <h2>Training and Development</h2>
-                        </div>
-                        <div class="flip-card-back">
-                           <img style="width:100%;height:200px;" src="assets/images/peerlogowh.png">
-                        </div>
-                    </div>
-                </div>
-                <a style="float:right;" class="btn-link btn-link--circle-right" href="photo_viewer.html"><span>See details<i class="circle circle--right icon-right-open"></i></span></a>
-            </div>
-        </div>
-        <!-- <div class="row">
-            <div class="col-lg-8">
-                <a href="#" ><button style="float:right;margin-right:30px;margin-top:20px;"  class="button">view more</button></a>
-            </div>
-            <div class="col-lg-4">
-                
-            </div>
-        </div> -->
-
-    </div>
-    <article class="caption-single container">
-        <div class="row">
-            <div class="col-12 col-lg-3">
-                <h4 class="title title--overhead js-lines">Meet the team </h4>
-            </div>
-            <div class="col-12 col-lg-9">
-                <h2 class="title title--h4 js-lines">A multi-disciplinary team of distinguished individuals</h2>
-            </div>
-        </div>
-    </article>
-    <div class="container container-no-gutters mb--2">
-        <div class="row">
-            <!-- itemCard -->
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 itemCard reveal">
-                <p style="background-color:#000; padding:20px 30px 30px 30px;color:#fff;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, quas quis temporibus laboriosam cum nesciunt eaque at. Eos, quaerat, laboriosam? Sapiente quaerat, ipsam nemo alias tempore ipsum commodi dolorum mollitia.</p>
-            </div>
-            <!-- /itemCard -->
-            <!-- itemCard -->
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 itemCard">
-                <div class="itemCard__imageWrap reveal">
-                    <img class="itemCard__image" src="assets/img/person_02.jpg" alt="">
-                </div>
-                <div class="itemCard__header">
-                    <h4 class="title title--h6 itemCard__title">Abhishek Singh</h4>
-                    <h5 class="title--overhead">CEO</h5>
-                </div>
-            </div>
-            <!-- /itemCard -->
-            <!-- itemCard -->
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 itemCard">
-                <div class="itemCard__imageWrap reveal">
-                    <img class="itemCard__image" src="assets/img/person_03.jpg" alt="">
-                </div>
-                <div class="itemCard__header">
-                    <h4 class="title title--h6 itemCard__title">Karun Mehra</h4>
-                    <h5 class="title--overhead">Senior Associate</h5>
-                </div>
-            </div>
-            <!-- /itemCard -->
-            <!-- itemCard -->
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 itemCard reveal">
-                <p style="background-color:#000; padding:20px 30px 30px 30px;color:#fff;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores exercitationem, libero, nobis id velit assumenda magnam numquam repellendus hic soluta maxime nulla accusantium alias est qui harum asperiores distinctio eos.</p>
-            </div>
-            <!-- itemCard -->
-        </div>
-    </div>
-    <!-- /Team -->
-    <!-- Slider -->
-    <!--   <div class="container-no-gutters">
-        <div class="row">
-            <div style="paddirg-right:10px;" class="col-lg-8">
-                <div class="slider slider-simply reveal ">
-                    <div class="slider-article swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="cover-slider" data-bg="assets/images/ach1.jpg"></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="cover-slider" data-bg="assets/images/ach2.jpg"></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="cover-slider" data-bg="assets/images/ach3.jpg"></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="cover-slider" data-bg="assets/images/ach4.jpg"></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="cover-slider" data-bg="assets/images/ach5.jpg"></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="cover-slider" data-bg="assets/images/ach6.jpg"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="control-slider control-slider--bottom swiper-control">
-                        <div class="swiper-button-next swiper-button-next--square zoom-cursor">
-                            <i class="icon-up-open"></i>
-                        </div>
-                        <div class="swiper-button-prev swiper-button-prev--square zoom-cursor">
-                            <i class="icon-down-open"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div style="display:flex; align-items:center;" class="col-lg-4">
-                <h1 class="reveal" style="font-size:60px;">&nbsp;&nbsp;&nbsp;&nbsp;&emsp;Our<br> Achievements</h1>
-            </div>
-        </div>
-    </div> -->
-    <!-- Awards -->
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-md-6 footer__left">
-                    <div>
-                        <h6 class="title title--h6 weight--300 mb--2">Sign up for our newsletter.</h6>
-                        <!-- Newsletter -->
-                        <div class="form-group">
-                            <form class="newsletter-form" data-toggle="validator">
-                                <div class="form-inline newsletter-form__row">
-                                    <input type="email" class="inputText inputText--fill" placeholder="Enter your email..." required autocomplete="off">
-                                    <button type="submit" class="btn btn__icon btn--white "><i class="icon-arrow-right"></i></button>
-                                </div>
-                                <div id="validator-newsletter" class="form-result"></div>
-                            </form>
-                        </div>
-                        <!-- /Newsletter -->
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 footer__right">
-                    <ul class="listContact list-unstyled">
-                        <li>
-                            <h6 class="title title--h6">OFFICE</h6>
-                        </li>
-                        <li>Peergrowth, Po Box No.-393343<br> Dubai, United Arab Emirates</li>
-                    </ul>
-                    <ul class="listContact list-unstyled">
-                        <li>
-                            <h6 class="title title--h6">GET IN TOUCH</h6>
-                        </li>
-                        <li>info@peergrowth.net</li>
-                        <li>+971 (0) 4 2400 448</li>
-                    </ul>
-                    <ul class="listContact list-unstyled">
-                        <li>
-                            <h6 class="title title--h6">FOLLOW US</h6>
-                        </li>
-                        <li>Connect with me on <a class="link_decoration" href="">facebook</a>,<br /><a class="link_decoration" href="">twitter</a> or <a class="link_decoration" href="">instagrem</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- /Footer -->
+    <!-- /Hero -->
+    <!-- Menu -->
     <div class="menu">
         <div class="menu-inner">
-            <ul class="menu-list">
-                <li><a class="menu-list__item" href="about_video.html"><span>Who we are?</span></a></li>
-                <li><a class="menu-list__item" href="whatwedo.html"><span>What we do?</span></a></li>
-                <li><a class="menu-list__item" href="#"><span>How we work?</span></a></li>
-                <li><a class="menu-list__item" href="speak.html"><span>Why Choose us?</span></a></li>
-                <li><a class="menu-list__item" href="contact.html"><span>Lets Interact</span></a></li>
+            <ul style="text-align:center;" class="menu-list">
+                <li><a class="menu-list__item" href="about_video.html"><span style="color:#1b254f">WHO</span> we are?</span></a></li>
+                <li><a class="menu-list__item" href="whatwedo.html"><span style="color:#1b254f">WHAT</span> we do?</span></a></li>
+                <li><a class="menu-list__item" href="howwework.html"><span style="color:#1b254f">HOW</span> we work?</span></a></li>
+                <li><a class="menu-list__item" href="speak.html"><span style="color:#1b254f">WHY</span> choose us?</span></a></li>
+                <li><a class="menu-list__item" href="contact.html"><span style="color:#1b254f">LETS</span> interact</span></a></li>
             </ul>
         </div>
-        <div class="social social--white">
-            <a class="social__link" href="#">We understand</a>
-            <a class="social__link" href="#">We interpret</a>
-            <a class="social__link" href="#">We execute</a>
+        <div class="social">
+            <p class="social__link" href="#">We understand</p>
+            <p class="social__link" href="#">We interpret</p>
+            <p class="social__link" href="#">We execute</p>
         </div>
     </div>
     <div class="ef-background"></div>
+    <!-- /Menu -->
     <!-- Demo Menu -->
     <div class="btnSlideNav slideClose"></div>
     <ul class="slideNav">

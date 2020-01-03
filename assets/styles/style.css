@@ -3386,7 +3386,7 @@ iframe {
     - Menu
 ----------------------------------------------------------------- */
 .menu {
-  background-image: url(../images/patternmenu.jpeg);
+  background-image: url(../images/dynamic.png);
   background-repeat: repeat;
   display: -webkit-flex;
   display: -ms-flexbox;

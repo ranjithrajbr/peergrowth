@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <title>Peer</title>
@@ -54,11 +55,48 @@
           -webkit-transform: rotate(45deg) translate(-8px, -8px);
           transform: rotate(45deg) translate(-8px, -8px);
         }
+        .collapsible {
+  background-color: white;
+  color: #000;
+  cursor: pointer;
+  padding: 18px;
+  width: auto;
+  border: 1px solid #fff;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+
+.active, .collapsible:hover {
+  background-color: #fff;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: #2775b8;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #ffff;
+}
+       
     </style>
     <script>
         function myFunction(x) {
           x.classList.toggle("change");
         }
+       
     </script>
 </head>
 
@@ -66,8 +104,8 @@
     <!-- Top -->
     <nav class="navbar">
         <div class="mr-auto logo-container">
-             <button class="hamburger zoom-cursor" type="button">
-                <div  onclick="myFunction(this)">
+            <button class="hamburger zoom-cursor" type="button">
+                <div onclick="myFunction(this)">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
@@ -76,7 +114,7 @@
         </div>
         <div class="ml-sm-auto">
             <a class="logo-link" href="index.html">
-                <img  class="logotype" src="assets/images/peerlogo.png" alt="ARTEM.">   
+                <img class="logotype" src="assets/images/peerlogo.png" alt="ARTEM.">
             </a>
         </div>
     </nav>
@@ -86,8 +124,8 @@
         <header class="header-page header-page--half js-opacity">
             <div class="container">
                 <!-- Title -->
-                <h6 class="title title--overhead title--tail">Our Expertise</h6>
-                <h1 class="title title--display-1 js-words">Executive Search</h1>
+                <h6 class="title title--overhead title--tail">Our</h6>
+                <h1 class="title title--display-1 js-words">Services</h1>
                 <!-- /Title -->
             </div>
         </header>
@@ -121,96 +159,83 @@
         </div>
         <article class="caption-single container">
             <div class="row">
-                <div class="col-12 col-lg-2"><span class="num-article">01 —</span></div>
+                <div class="col-12 col-lg-2"><span class="num-article"></span></div>
                 <div class="col-12 col-lg-9">
-                    <h2 class="title title--h4 js-lines">We are here to match the right human to fit into your organisational needs!</h2>
-                    <div class="description js-block">
-                        <p>At the leadership of every firm, stand those individuals that the entire firm looks up to. To ensure we find the right individual, that fits the firm like a glove, we not only research above and beyond every candidate’s resume, but also take care of reaching every goal set by the organisation in question, to support their human capital requirements.</p>
+                    <button class="collapsible">1.Executive Search</button>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="collapsible">2.Contingent Search</button>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="collapsible">3.Board Consulting</button>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="collapsible">4.Training and Development</button>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="collapsible">5.Peergrowth Research Chronicle</button>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                 </div>
             </div>
         </article>
-        <!-- Image -->
-        <figure class="image-container image-container--gutters reveal">
-            <img class="cover" src="assets/images/exec1.jpg" alt="" />
-        </figure>
-        <!-- /Image -->
-        <article class="caption-single container">
-            <div class="row">
-                <div class="col-12 col-lg-2"><span class="num-article">02 —</span></div>
-                <div class="col-12 col-lg-9">
-                    <h2 class="title title--h4 js-lines"> Behind all those computers, stand humans who make the firm a better place to work at!</h2>
-                    <div class="description js-block">
-                        <p> Unlike the traditional ways of recruitment, we walk several extra miles to ensure that our core values reflect in our search and help churn out the perfect candidate for every organisation that there is.</p>
-                    </div>
-                </div>
-            </div>
-        </article>
-        <!-- Slider -->
-        <div class="slider slider-simply image-container--gutters">
-            <div class="slider-article swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="cover-slider" data-bg="assets/images/exec1.jpg"></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="cover-slider" data-bg="assets/images/exec2.jpg"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="control-slider control-slider--bottom swiper-control">
-                <div class="swiper-button-next swiper-button-next--square zoom-cursor">
-                    <i class="icon-up-open"></i>
-                </div>
-                <div class="swiper-button-prev swiper-button-prev--square zoom-cursor">
-                    <i class="icon-down-open"></i>
-                </div>
-            </div>
-        </div>
-        <!-- /Slider -->
-        <article class="caption-single container">
-            <div class="row">
-                <div class="col-12 col-lg-2"><span class="num-article">03 —</span></div>
-                <div class="col-12 col-lg-9">
-                    <h2 class="title title--h4 js-lines"> At Peergrowth, we specialise in Board & CEO/CXO level searches</h2>
-                    <div class="description js-block">
-                        <p>Our trusted team of consultants work tirelessly to reach out to top performers across industries to understand their aspirations and what drives them as individuals. This first-hand knowledge helps us in aligning the interest of our candidates with what our clients have to offer, thereby making this process a breeze.</p>
-                        <br>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <h4 class="title title--h6 js-lines">Closure Rate</h4>
-                                <div class="js-lines"> 97%-98%</div>
-                            </div>
-                            <div class="col-lg-6">
-                                <h4 class="title title--h6 js-lines">Huge array of partners</h4>
-                                <div class="js-lines">Exceeding 25+</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </article>
-        <!-- /Image -->
-        
         <!-- Page nav -->
         <!-- /Page nav -->
     </section>
+      <!-- Footer -->
+    <footer class="footer">
+        <div class="container ">
+            <div class="left-right">
+                <div class="row">
+                    <div class="col-md-4 box">
+                        <h1 class="heading-footer">Office</h1>
+                        <p class="paragraph-footer">Peergrowth, Po Box No.-393343<br>
+                            Dubai, United Arab Emirates</p>
+                    </div>
+                    <div class="col-md-4 box">
+                        <h1 class="heading-footer">Get in touch</h1>
+                        <p class="paragraph-footer">info@peergrowth.net<br>
+                            +971 (0) 4 2400 448</p>
+                    </div>
+                    <div class="col-md-4 box">
+                        <h1 class="heading-footer">Legal</h1>
+                        <p class="paragraph-footer"><a href=" " style="text-decoration: none;color:#fff;">Privacy Policy</a><br>
+                        <a href=" " style="text-decoration: none;color:#fff;">Terms and Condition</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
     <!-- /Intro -->
+       <!-- Menu -->
     <div class="menu">
         <div class="menu-inner">
             <ul style="text-align:center;" class="menu-list">
-                <li><a class="menu-list__item" href="about_video.html"><span style="color:#1b254f">WHO</span> we are?</span></a></li>
-                <li><a class="menu-list__item" href="whatwedo.html"><span style="color:#1b254f">WHAT</span> we do?</span></a></li>
-                <li><a class="menu-list__item" href="howwework.html"><span style="color:#1b254f">HOW</span> we work?</span></a></li>
-                <li><a class="menu-list__item" href="speak.html"><span style="color:#1b254f">WHY</span> choose us?</span></a></li>
-                <li><a class="menu-list__item" href="contact.html"><span  style="color:#1b254f">LETS</span> interact</span></a></li>
-                
+                <li><a class="menu-list__item" href="about_video.html"><span style="color:#1b254f">Who</span> we are?</span></a></li>
+                <li><a class="menu-list__item" href="whatwedo.html"><span style="color:#1b254f">What</span> we do?</span></a></li>
+                <li><a class="menu-list__item" href="howwework.html"><span style="color:#1b254f">How</span> we work?</span></a></li>
+                <li><a class="menu-list__item" href="speak.html"><span style="color:#1b254f">Why</span> choose us?</span></a></li>
+                <li><a class="menu-list__item" href="contact.html"><span style="color:#1b254f">Peergrowth</span> connect</span></a></li>
             </ul>
         </div>
-        <div class="social">
-            <p class="social__link" href="#">We understand</p>
-            <p class="social__link" href="#">We interpret</p>
-            <p class="social__link" href="#">We execute</p>
+        <div class= "container">
+            <div class="row">
+                <div class="col-lg-4">
+                   <h4 class="title--h4 title--center"> We Understand</h4>
+                </div>
+                 <div class="col-lg-4">
+                     <h4 class="title--h4 title--center"> We Interpret</h4>
+                </div>
+                 <div class="col-lg-4">
+                     <h4 class="title--h4 title--center"> We Execute</h4>
+                </div>
+            </div>
         </div>
     </div>
     <div class="ef-background"></div>
@@ -247,6 +272,22 @@
     <!-- Demo Menu -->
     <div class="cursor"></div>
     <!-- JavaScripts -->
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+    </script>
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/common.js"></script>

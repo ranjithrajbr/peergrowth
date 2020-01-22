@@ -95,7 +95,7 @@ body, html {
 }
 
 body {
-  background-image: url(../images/dynamic.png);
+  /* background-image: url(../images/dynamic.png); */
   background-repeat:repeat;                                       
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -985,6 +985,7 @@ iframe {
   transition: all 0.3s cubic-bezier(0.72, 0.16, 0.345, 0.875);
   width: 100%;
   z-index: 1001;
+  background-color: #fff;
 }
 @media only screen and (max-width: 1500px) {
   .navbar {
@@ -1142,7 +1143,7 @@ iframe {
 
 .logotype {
   display: inline-block;
-  height: 40px;
+  height: 80px;
   max-height: 90px;
   transition: transform 0.4s cubic-bezier(0.72, 0.16, 0.345, 0.875);
 }
@@ -1422,6 +1423,7 @@ iframe {
   left: 0;
   width: 10rem;
   z-index: 2;
+  background-color: #2775b8;
 }
 @media only screen and (max-width: 1500px) {
   .slider .control-slider--vertical {
@@ -3386,7 +3388,8 @@ iframe {
     - Menu
 ----------------------------------------------------------------- */
 .menu {
-  background-image: url(../images/dynamic.png);
+ /*  background-image: url(../images/dynamic.png); */
+ background-color: #fff;
   background-repeat: repeat;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4218,6 +4221,7 @@ li:nth-child(4) .menu-list__item span {
 .footer {
   margin-top: 8rem;
   position: relative;
+  background-color: #2775b8;
 }
 @media only screen and (max-width: 768px) {
   .footer {
@@ -4231,10 +4235,10 @@ li:nth-child(4) .menu-list__item span {
 }
 .footer::before {
   content: '';
-  background-color: #1b254f;
+  background-color: #2775b8;
   position: absolute;
   height: 100%;
-  width: 50%;
+  width: 100%;
 }
 @media only screen and (max-width: 768px) {
   .footer::before {
@@ -4628,5 +4632,34 @@ li:nth-child(4) .menu-list__item span {
 .gold{
   color: #d4af37;
 }
+.symmetrical{
+  margin-bottom:2rem;
+}
+.space{
+  display: flex;
+  flex-direction: row;
+}
+.box{
+  padding: 5px 5px 5px 5px;
+}
+.heading-footer{
+  margin-bottom:1rem;
+  color: #fff;
+}
+.paragraph-footer{
+  margin-bottom:3rem;
+  padding-left:3px;
+  color: #fff;
+
+}
+.left-right{
+  margin-right:3rem;
+  margin-left: 5rem;
+  padding:0px 10px 0px 10px;
+}
+.text-white{
+
+}
+
 
 /*# sourceMappingURL=style.css.map #f7541b */

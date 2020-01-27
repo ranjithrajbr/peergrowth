@@ -46,7 +46,9 @@
             border: 2px solid #000;
             cursor: pointer;
             overflow: visible;
-            
+            position: fixed;
+            right: 0;
+            bottom:10px;
         }
         .bar1, .bar2, .bar3 {
       width: 35px;
@@ -88,10 +90,10 @@
         </div>
     </div>
     <!-- Top -->
-    <nav class="navbar">
+    <nav style="background-color:unset;" class="navbar">
         <div class="mr-auto logo-container">
-             <button class="hamburger zoom-cursor" type="button">
-                <div  onclick="myFunction(this)">
+            <button class="hamburger zoom-cursor" type="button">
+                <div onclick="myFunction(this)">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
@@ -100,13 +102,13 @@
         </div>
         <div class="ml-sm-auto">
             <a class="logo-link" href="index.html">
-                <img  class="logotype" src="assets/images/peerlogo.png" alt="ARTEM.">    
+                <img class="logotype" src="assets/images/peerlogo.png" alt="ARTEM.">
             </a>
         </div>
     </nav>
     <!-- /Top -->
     <!-- Hero -->
-    <header class="hero">
+      <header class="hero">
         <div class="slider slider-horizontal">
             <div class="control-slider control-slider--vertical swiper-control">
                 <div></div>
@@ -131,84 +133,79 @@
             </div>
             <div class="slider__image swiper-container reveal">
                 <div class="swiper-wrapper">
-                    <!-- Image 1 -->
+                   
                     <div class="swiper-slide">
                         <div class="cover-slider" data-bg="assets/images/global.jpeg"><a class="swiper-slide__link" href="#"></a></div>
                     </div>
-                    <!-- /Image 1 -->
-                    <!-- Image 2 -->
+                    
                     <div class="swiper-slide">
                         <div class="cover-slider" data-bg="assets/images/value.jpeg"><a class="swiper-slide__link" href="#"></a></div>
                     </div>
-                    <!-- /Image 2 -->
-                    <!-- Image 3 -->
+                   
                     <div class="swiper-slide">
                         <div class="cover-slider" data-bg="assets/images/Reserach.jpeg"><a class="swiper-slide__link" href="#"></a></div>
                     </div>
-                    <!-- /Image 4 -->
+                   
                     <div class="swiper-slide">
                         <div class="cover-slider" data-bg="assets/images/post.jpeg"><a class="swiper-slide__link" href="#"></a></div>
                     </div>
-                    <!-- /Image 4 -->
-                    <!-- /Image 5 -->
+                   
                     <div class="swiper-slide">
                         <div class="cover-slider" data-bg="assets/images/custom.jpeg"><a class="swiper-slide__link" href="#"></a></div>
                     </div>
-                    <!-- /Image 5 -->
+                    
                 </div>
             </div>
             <div class="slider__caption swiper-container">
                 <div class="swiper-wrapper">
-                    <!-- Caption 1 -->
+                    
                     <div class="swiper-slide">
                         <div class="slider__item reveal">
                             <h6 class="title title--overhead"><span class="down-up"><span>Trusted management consulting firm, within search and advisory.&nbsp;<img style="width:50px;height:50px;" src="assets/images/Globalreach.png"></span></span></h6>
                             <h1 class="title title--display-1 js-text-wave">Global Reach
                             </h1>
-                            <a class="btn-link" href="contact.html"><span class="down-up"><span><button class="button">Peergrowth Connect</button></span></span></a>
                         </div>
+                         <a class="btn-link" href="contact.html"><button class="button">Peergrowth Connect</button></a>
                     </div>
-                    <!-- /Caption 1 -->
-                    <!-- Caption 2 -->
+                    
                     <div class="swiper-slide ">
                         <div class="slider__item reveal">
                             <h6 class="title title--overhead"><span class="down-up"><span>Trusted management consulting firm, within search and advisory.&nbsp; <img style="width:50px;height:50px;" src="assets/images/Valuedriven.png"></span></span></h6>
                             <h1 class="title title--display-1 js-text-wave">Values driven</h1>
-                            <a class="btn-link" href="contact.html"><span class="down-up"><span><button class="button">Peergrowth Connect</button></span></span></a>
+                          
                         </div>
+                         <a class="btn-link" href="contact.html"><button class="button">Peergrowth Connect</button></a>
                     </div>
-                    <!-- /Caption 2 -->
-                    <!-- Caption3  -->
+                   
                     <div class="swiper-slide">
                         <div class="slider__item reveal">
                             <h6 class="title title--overhead"><span class="down-up"><span>Trusted management consulting firm, within search and advisory.&nbsp;<img style="width:50px;height:50px;" src="assets/images/Research oriented.png"></span></span></h6>
                             <h1 class="title title--display-1 js-text-wave">Research Oriented</h1>
-                            <a class="btn-link" href="contact.html"><span class="down-up"><span><button class="button">Peergrowth Connect</button></span></span></a>
                         </div>
+                         <a class="btn-link" href="contact.html"><button class="button">Peergrowth Connect</button></a>
                     </div>
-                    <!-- /Caption 3 -->
-                    <!--Caption 4 -->
+                 
                     <div class="swiper-slide">
                         <div class="slider__item reveal">
                             <h6 class="title title--overhead"><span class="down-up"><span>Trusted management consulting firm, within search and advisory.&nbsp;<img style="width:50px;height:50px;" src="assets/images/Research oriented.png"></span></span></h6>
                             <h1 style="font-size:50px;" class="title title--display-1 js-text-wave">Post Closure Engagement</h1>
-                            <a class="btn-link" href="contact.html"><span class="down-up"><span><button class="button">Peergrowth Connect</button></span></span></a>
                         </div>
+                         <a class="btn-link" href="contact.html"><button class="button">Peergrowth Connect</button></a>
                     </div>
-                    <!--Caption 4 -->
-                    <!--Caption 5 -->
+                   
                     <div class="swiper-slide">
                         <div class="slider__item reveal">
                             <h6 class="title title--overhead"><span class="down-up"><span>Trusted management consulting firm, within search and advisory.&nbsp;<img style="width:50px;height:50px;" src="assets/images/Research oriented.png"></span></span></h6>
                             <h1 class="title title--display-1 js-text-wave">Customized Approach</h1>
-                            <a class="btn-link" href="contact.html"><span class="down-up"><span><button class="button">Peergrowth Connect</button></span></span></a>
+                            
                         </div>
+                         <a class="btn-link" href="contact.html"><button class="button">Peergrowth Connect</button></a>
                     </div>
-                    <!--/Caption 5 -->
+                   
                 </div>
             </div>
         </div>
-    </header>
+      </header> 
     <!-- /Hero -->
     <!-- Menu -->
     <div class="menu">
@@ -221,16 +218,16 @@
                 <li><a class="menu-list__item" href="contact.html"><span style="color:#1b254f">Peergrowth</span> connect</span></a></li>
             </ul>
         </div>
-        <div class= "container">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                   <h4 class="title--h4 title--center"> We Understand</h4>
+                    <h4 class="title--h4 title--center"> We Understand</h4>
                 </div>
-                 <div class="col-lg-4">
-                     <h4 class="title--h4 title--center"> We Interpret</h4>
+                <div class="col-lg-4">
+                    <h4 class="title--h4 title--center"> We Interpret</h4>
                 </div>
-                 <div class="col-lg-4">
-                     <h4 class="title--h4 title--center"> We Execute</h4>
+                <div class="col-lg-4">
+                    <h4 class="title--h4 title--center"> We Execute</h4>
                 </div>
             </div>
         </div>

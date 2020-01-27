@@ -265,7 +265,7 @@ $(document).ready(function() {
                 loop: true,
                 effect: 'fade',			
 	            parallax: true,
-                speed: 1200,
+                speed: 6000,
                 simulateTouch: false
             });
 			

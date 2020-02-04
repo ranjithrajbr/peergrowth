@@ -34,51 +34,49 @@
     <link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/styles/style-dark.css" />
     <link rel="stylesheet" type="text/css" href="assets/demo/style-demo.css" />
-    <style>
-        .button{
-            background-color:#e7e7e7;
-            border-radius: 12px;
-            color:black;
-            padding: 8px 24px;
-            text-align: center;
-            display: inline-block;
-            font-size: 15px;
-            border: 2px solid #000;
-            cursor: pointer;
-            overflow: visible;
-            position: fixed;
-            right: 0;
-            bottom:10px;
-        }
-        .bar1, .bar2, .bar3 {
-      width: 35px;
-      height: 5px;
-      background-color: #333;
-      margin: 6px 0;
-      transition: 0.4s;
-      left: 0;
+<style>
+     .button{
+                            background-color:#e7e7e7;
+                            border-radius: 12px;
+                            color:black;
+                            padding: 8px 24px;
+                            text-align: center;
+                            display: inline-block;
+                            font-size: 15px;
+                            border: 2px solid #000;
+                            cursor: pointer;
+                            overflow: visible;
+                            position: fixed;
+                            right: 0;
+                            bottom:10px;
+                        }
+                        .bar1, .bar2, .bar3 {
+                      width: 35px;
+                      height: 5px;
+                      background-color: #333;
+                      margin: 6px 0;
+                      transition: 0.4s;
+                      left: 0;
 
-}
+                }
 
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
+                .change .bar1 {
+                  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+                  transform: rotate(-45deg) translate(-9px, 6px);
+                }
 
-.change .bar2 {opacity: 0;}
+                .change .bar2 {opacity: 0;}
 
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-}
-
-                                        
-    </style>
-    <script>
+                .change .bar3 {
+                  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+                  transform: rotate(45deg) translate(-8px, -8px);
+                }
+</style>
+<script>
         function myFunction(x) {
   x.classList.toggle("change");
 }
-    </script>
+</script>
 </head>
 
 <body>
@@ -108,7 +106,7 @@
     </nav>
     <!-- /Top -->
     <!-- Hero -->
-      <header class="hero">
+    <header class="hero">
         <div class="slider slider-horizontal">
             <div class="control-slider control-slider--vertical swiper-control">
                 <div></div>

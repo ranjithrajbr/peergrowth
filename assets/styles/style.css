@@ -1425,7 +1425,7 @@ iframe {
   left: 0;
   width: 10rem;
   z-index: 2;
-  background-color: #2775b8;
+ /*  background-color: #2775b8; */
 }
 @media only screen and (max-width: 1500px) {
   .slider .control-slider--vertical {
@@ -1794,6 +1794,7 @@ iframe {
   margin-top: 1.5rem;
   height: 100%;
   width: 50%;
+  margin-left: 10rem;
 }
 @media only screen and (max-width: 1500px) {
   .slider-fullscreen .slider__caption .slider__item {
@@ -4655,9 +4656,8 @@ li:nth-child(4) .menu-list__item span {
 
 }
 .left-right{
-  margin-right:3rem;
-  margin-left: 5rem;
-  padding:0px 10px 0px 10px;
+  margin-left: 10rem;
+  padding:20px 10px 0px 10px;
 }
 
 
